@@ -10,9 +10,12 @@ public class PointsCounter : MonoBehaviour
     void Start()
     {
         myText.text = "Points: 0";
-        ClickReceiver.PointsTaken += pointsReceive;
+        ClickReceiver.PointsTaken += pointsReceive; // подписка на событие лопанья шарика
     }
-
+    /// <summary>
+    /// Увеличение счетчика очков
+    /// </summary>
+    /// <param name="points">очки за один шарик</param>
     public void pointsReceive (float points)
     {
         totalPoints += points;

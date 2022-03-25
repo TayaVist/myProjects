@@ -3,17 +3,18 @@
 public class CirclesSpawn : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Circles;
+    private GameObject Circles; // объект, который будм спавнить
     [SerializeField]
-    public float startTimeSpawns;
-    public float timeBtwSpawns;
-    private float randPosition;
-    int level = 0;
+    public float startTimeSpawns; // базовое время между спавном шариков
+    public float timeBtwSpawns; // текущее время до спавна следующего шарика
+    private float randPosition; // позиция спавна шариков по оси x
+    int level = 0; // уровень игры
     [SerializeField]
-    float initialTimeBtwLevels = 10;
+    float initialTimeBtwLevels = 10; // время между увеличением уровня
     [SerializeField]
-    float timeBtwLevels;
+    float timeBtwLevels; // текущее время до увеличения уровня на 1
 
+    // ивент повышения уровня для увеличения базовых скоростей шариков и времени между их появлением
     public static event levelUp LevelUp;
     public delegate void levelUp(int level);
 
@@ -46,7 +47,6 @@ public class CirclesSpawn : MonoBehaviour
         }
         Spawns();        
     }
-
     void Spawns()
     {
         if (timeBtwSpawns <= 0)

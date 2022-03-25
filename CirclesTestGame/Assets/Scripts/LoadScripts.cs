@@ -14,33 +14,12 @@ public class LoadScripts : MonoBehaviour
             Debug.Log("Failed to load AssetBundle!");
             return;
         }
+        var musicRequest = myLoadedAssetBundle.LoadAsset<AudioClip>("wellbegonebythen.mp3");
+        Debug.Log("Музыка распакована");
 
-        try
-        {
-            var musicRequest = myLoadedAssetBundle.LoadAsset<AudioClip>("wellbegonebythen.mp3");
-            //var musicRequest = myLoadedAssetBundle.LoadAssetAsync(musicName, typeof(AudioClip));
-            Debug.Log("Музыка распакована");
-            try
-            {
-                source.GetComponent<AudioSource>().clip = musicRequest;
-                //source = GetComponent<AudioSource>();
-                //source.clip = musicRequest as AudioClip;
-                source.Play();
-                Debug.Log("не лажа");
-            }
-            catch
-            {
-                Debug.Log("лажа ");
-            }
-        }
-        catch
-        {
-            Debug.Log("лажа распаковки");
-        }
-       
-        
-        
-
+        //source.GetComponent<AudioSource>().clip = musicRequest;
+        source.clip = musicRequest;
+        source.Play(); 
     }
 
     /*string bundleURL = "";
@@ -71,7 +50,7 @@ public class LoadScripts : MonoBehaviour
         Debug.Log("Музыка распакована");
 
         source.clip = musicRequest.asset as AudioClip;
-        source.Play();*/
+        source.Play();
 
-    //}
+    }*/
 }

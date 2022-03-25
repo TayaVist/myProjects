@@ -59,37 +59,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11340}
-    - Class: 114
       Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11344}
     - Class: 114
-      Script: {instanceID: 11604}
+      Script: {instanceID: 11560}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11606}
     - Class: 114
-      Script: {instanceID: 12100}
+      Script: {instanceID: 11764}
     - Class: 114
-      Script: {instanceID: 12330}
+      Script: {instanceID: 12104}
     - Class: 114
-      Script: {instanceID: 12664}
+      Script: {instanceID: 12334}
     - Class: 114
-      Script: {instanceID: 13320}
+      Script: {instanceID: 12436}
     - Class: 114
-      Script: {instanceID: 13732}
+      Script: {instanceID: 12502}
     - Class: 114
-      Script: {instanceID: 13800}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 14742}
+      Script: {instanceID: 13000}
     - Class: 114
-      Script: {instanceID: 16522}
+      Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 23518}
+      Script: {instanceID: 13396}
     - Class: 114
-      Script: {instanceID: 26150}
+      Script: {instanceID: 13744}
     - Class: 114
-      Script: {instanceID: 28394}
+      Script: {instanceID: 13812}
+    - Class: 114
+      Script: {instanceID: 13888}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -335,10 +335,22 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
+      Hash: a8aa1bf125b5f6ce383db5bc12ed2534
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Timer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 4a4e98db98041680900a57faa5b629e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RandomColor
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -395,6 +407,12 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: a4da482c1930e81fb49497222e6a6b16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoadScripts
+  - hash:
+      serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -441,6 +459,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: a8aa1bf125b5f6ce383db5bc12ed2534
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointsCounter
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -551,42 +575,17 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: c3d3430df9e3ea95e3e3d587961390fb
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: a8aa1bf125b5f6ce383db5bc12ed2534
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PointsCounter
-  - hash:
-      serializedVersion: 2
-      Hash: a8aa1bf125b5f6ce383db5bc12ed2534
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Timer
-  - hash:
-      serializedVersion: 2
-      Hash: 4a4e98db98041680900a57faa5b629e5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RandomColor
-  - hash:
-      serializedVersion: 2
-      Hash: a4da482c1930e81fb49497222e6a6b16
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: LoadScripts
-  - hash:
-      serializedVersion: 2
       Hash: a620df4904717cbab92159a64aaa3d8c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CloseGame
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
   platform: 19
   scenePathNames:
   - Assets/MainScene.unity
-  playerPath: "C:/Users/carro/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/CirclesGame.exe"
+  playerPath: "D:/\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435/myProjects/CirclesGame.exe"
