@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\CirclesSpawn.cs" />
     <Compile Include="Assets\Scripts\ClickReceiver.cs" />
     <Compile Include="Assets\Scripts\CloseGame.cs" />
+    <Compile Include="Assets\Scripts\Difficulty.cs" />
     <Compile Include="Assets\Scripts\LoadScripts.cs" />
     <Compile Include="Assets\Scripts\MoveController.cs" />
     <Compile Include="Assets\Scripts\PointsCounter.cs" />

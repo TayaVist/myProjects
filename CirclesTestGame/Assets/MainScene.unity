@@ -505,10 +505,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Circles: {fileID: 251149891574690132, guid: 817b3af1f2c5044408e9f2b2be8812ac, type: 3}
-  startTimeSpawns: 3
-  timeBtwSpawns: 0
-  initialTimeBtwLevels: 20
-  timeBtwLevels: 0
 --- !u!4 &1021277982
 Transform:
   m_ObjectHideFlags: 0
@@ -1085,6 +1081,7 @@ GameObject:
   - component: {fileID: 2094294054}
   - component: {fileID: 2094294053}
   - component: {fileID: 2094294052}
+  - component: {fileID: 2094294055}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1140,6 +1137,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094294055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094294051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398ec48cd7d2b684b9d879683b04676d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelSpeed:
+  - 1.2
+  - 1.5
+  - 2
+  levelTimeBtwSpawns:
+  - 4
+  - 2
+  - 0.5
+  initialTimeBtwLevels: 10
 --- !u!1001 &5860224005080593160
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -3,48 +3,24 @@
 public class CirclesSpawn : MonoBehaviour
 {
     [SerializeField]
-    private GameObject Circles; // объект, который будм спавнить
-    [SerializeField]
-    public float startTimeSpawns; // базовое время между спавном шариков
-    public float timeBtwSpawns; // текущее время до спавна следующего шарика
+    private GameObject Circles; // объект, который будем спавнить
     private float randPosition; // позиция спавна шариков по оси x
-    int level = 0; // уровень игры
-    [SerializeField]
-    float initialTimeBtwLevels = 10; // время между увеличением уровня
-    [SerializeField]
-    float timeBtwLevels; // текущее время до увеличения уровня на 1
-
-    // ивент повышения уровня для увеличения базовых скоростей шариков и времени между их появлением
-    public static event levelUp LevelUp;
-    public delegate void levelUp(int level);
+    private float timeBtwSpawns; // время до спавна следующего шарика
+    private float levelTimeBtwSpawns; // заданное время между спавном шариков   
 
     void Start()
     {
-        timeBtwSpawns = startTimeSpawns;
-        timeBtwLevels = initialTimeBtwLevels;
+        Difficulty.levelUpSpawns += ReduceStartTimeSpawns; // подписка на событие лопанья шарика
+        GameObject go = GameObject.Find("EventSystem"); // ищем объект, к которому прикреплен скрипт сложности
+        Difficulty difficulty = go.GetComponent<Difficulty>(); // делаем экземпляр скрипта сложности
+        levelTimeBtwSpawns = difficulty.levelTimeBtwSpawns[0];
+        // берем поле, где проинициализирован промежуток времени между спавном шариков для 1го уровня
+
+        timeBtwSpawns = levelTimeBtwSpawns;
     }
 
     void Update()
     {
-       level = levelDifficulty();
-       switch(level)
-        {
-            case 0: {
-                startTimeSpawns = 3f;
-                    break;
-                } 
-            case 1:
-                startTimeSpawns = 2f;
-                break;
-            case 2:
-                startTimeSpawns = 1;
-                break;
-            case 3:
-                startTimeSpawns = 0.5f;
-                break;
-            default: 
-                break;
-        }
         Spawns();        
     }
     void Spawns()
@@ -57,7 +33,7 @@ public class CirclesSpawn : MonoBehaviour
             transform.localScale.y * x, transform.localScale.z * 1f);
 
             Instantiate(Circles,new Vector3(randPosition, 420f+(x/2), -10f), Quaternion.identity);
-            timeBtwSpawns = startTimeSpawns;
+            timeBtwSpawns = levelTimeBtwSpawns;
         }
         else
         {
@@ -65,16 +41,8 @@ public class CirclesSpawn : MonoBehaviour
         }
     }
 
-public int levelDifficulty ()
-    {        
-        timeBtwLevels -= Time.deltaTime;
-        if (timeBtwLevels <= 0)
-        {  
-            level ++;
-            LevelUp.Invoke(level);
-            timeBtwLevels = initialTimeBtwLevels;
-        }
-        return level;
+    public void ReduceStartTimeSpawns(float time) {
+        levelTimeBtwSpawns = time;
     }
 
 }

@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CirclesSpawn
     - ClickReceiver
     - CloseGame
+    - Difficulty
     - LoadScripts
     - MoveController
     - PointsCounter
@@ -59,37 +60,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11340}
+    - Class: 114
       Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 11344}
+      Script: {instanceID: 11558}
     - Class: 114
-      Script: {instanceID: 11560}
+      Script: {instanceID: 11604}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11762}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 12102}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 12332}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12434}
     - Class: 114
-      Script: {instanceID: 12436}
+      Script: {instanceID: 12500}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12670}
     - Class: 114
-      Script: {instanceID: 12672}
+      Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 13000}
+      Script: {instanceID: 13328}
     - Class: 114
-      Script: {instanceID: 13330}
+      Script: {instanceID: 13394}
     - Class: 114
-      Script: {instanceID: 13396}
+      Script: {instanceID: 13742}
     - Class: 114
-      Script: {instanceID: 13744}
+      Script: {instanceID: 13810}
     - Class: 114
-      Script: {instanceID: 13812}
+      Script: {instanceID: 13886}
     - Class: 114
-      Script: {instanceID: 13888}
+      Script: {instanceID: 14310}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -125,7 +128,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: bd50f3f51c49152f6314f11c3cfc5f34
+      Hash: 6b56160f92c613ced1c5845a174141a6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: CirclesSpawn
@@ -585,7 +588,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 855a8ec915a46b0a438bae94ff6de358
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Difficulty
   platform: 19
   scenePathNames:
   - Assets/MainScene.unity
-  playerPath: "D:/\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435/myProjects/CirclesGame.exe"
+  playerPath: "D:/\u0422\u0435\u0441\u0442\u043E\u0432\u043E\u0435/myProjects/Build1/CirclesGame.exe"

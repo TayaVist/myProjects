@@ -15,7 +15,6 @@ public class LoadScripts : MonoBehaviour
             return;
         }
         var musicRequest = myLoadedAssetBundle.LoadAsset<AudioClip>("wellbegonebythen.mp3");
-        Debug.Log("Музыка распакована");
 
         //source.GetComponent<AudioSource>().clip = musicRequest;
         source.clip = musicRequest;

@@ -8,28 +8,15 @@ public class MoveController : MonoBehaviour
   
     void Start()
     {
-        CirclesSpawn.LevelUp += baseSpeedUp;
+        Difficulty.levelUpSpeed += baseSpeedUp;
     }
     /// <summary>
     /// Увеличение базовых скоростей при увеличении уровня
     /// </summary>
-    /// <param name="level">уровень игры</param>
-    public void baseSpeedUp (int level)
+    /// <param name="baseSpeedCoef">коэффициент ускорения</param>
+    public void baseSpeedUp (float speed)
     {
-        switch (level)
-        {
-            case 1:
-                baseSpeed = 1.1f;
-                break;
-            case 2:
-                baseSpeed = 1.2f;
-                break;
-            case 3:
-                baseSpeed = 1.5f;
-                break;
-            default:
-                break;
-        }
+        baseSpeed *= speed;
     }
     void Update()
     {
