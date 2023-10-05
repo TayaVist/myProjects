@@ -1,7 +1,3 @@
-
-*.meta
-*.unity
-*.FBX
-*.mat
-*.png
-*.brush
+/CirclesTestGame/Library/
+/CirclesTestGame/*.csproj
+/CirclesTestGame/obj/Debug/
