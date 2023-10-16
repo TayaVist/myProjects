@@ -1,5 +1,12 @@
+#Unity
 /CirclesTestGame/Library/
 /CirclesTestGame/*.csproj
 /CirclesTestGame/obj/Debug/
-/CirclesTestGame/.idea/.idea.CirclesTestGame/.idea/indexLayout.xml
 /CirclesTestGame/Temp/
+
+#VisualStudio
+/CirclesTestGame/.vs
+/CirclesTestGame/.vs/CirclesTestGame
+
+#Idea
+/CirclesTestGame/.idea
